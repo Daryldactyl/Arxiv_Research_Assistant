@@ -24,7 +24,6 @@ llm = ChatOpenAI(temperature=0.4)
 # verify_connection()
 
 # -----------------------------------------------------------------------------
-# @st.cache_resource
 def download_pdfs(_arxiv_papers, _folder):
     numbers = []
     for paper_url in _arxiv_papers:
