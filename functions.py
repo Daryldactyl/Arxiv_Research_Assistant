@@ -43,7 +43,7 @@ def create_accurate_query(_query, _llm):
 # Find Arxiv Research papers that best fit user query
 
 from langchain_community.retrievers import ArxivRetriever
-# @st.cache_data
+
 def find_arxiv_papers(_query):
     #Paper links for the chain
     arxiv_papers = []
@@ -69,7 +69,7 @@ def find_arxiv_papers(_query):
 ####################################################################################################
 
 # Create Folder to save PDF documents in
-# @st.cache_data
+#################
 def create_folder_name(_query, _llm):
     prompt = PromptTemplate(
         input_variables = ['query'],
@@ -102,6 +102,7 @@ def get_numbers(url):
     else:
         numbers = None
     return numbers
+    
 def download_pdf_from_arxiv(_url, _download_folder):
     if not os.path.exists(_download_folder):
         os.makedirs(_download_folder)
@@ -171,7 +172,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-# @st.cache_resource
+
 def summarize_pdf_and_create_db(_folder, _pdf_paths, _llm, _openai_api_key):
     all_pages = []
     summaries = []
@@ -208,7 +209,7 @@ def summarize_pdf_and_create_db(_folder, _pdf_paths, _llm, _openai_api_key):
 ####################################################################################################
 
 # Make best recommendation based on paper summary
-# @st.cache_data
+
 def make_paper_recommendation(_summaries, _query, _llm):
     template = PromptTemplate(
         input_variables=['summaries', 'query'],
