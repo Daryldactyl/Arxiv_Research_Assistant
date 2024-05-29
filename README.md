@@ -41,13 +41,13 @@ pip install -r requirements.txt
 ```
 
 ### *4. Insert OpenAI API Key*
-You will need to open the python file in your chosen IDE and change this line in app.py:
-```python
-os.environ['OPENAI_API_KEY'] = openai
-```
-to this:
+You will need to open the python file in your chosen IDE and insert this line in app.py:
 ```python
 openai = 'your_api_key'
+```
+above this line:
+```python
+os.environ['OPENAI_API_KEY'] = openai
 ```
 and comment out the import:
 ```python
