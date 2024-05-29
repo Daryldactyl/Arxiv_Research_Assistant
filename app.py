@@ -43,7 +43,6 @@ def clear_states():
 if __name__ == '__main__':
     # Streamlit app
     st.markdown('# 📚 Arxiv Research Assistant 🤖')
-    st.write(st.session_state)
 
     # Research Form
     with st.form('Research Task'):
