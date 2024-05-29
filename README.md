@@ -6,13 +6,14 @@ Setup
 1. Create a Virtual Environment (Optional but Recommended)
 It's a good practice to work within a virtual environment to manage project dependencies.
 
-bash
-Copy code
+```bash
 # Create a virtual environment
 python3 -m venv env
-
+```
+```bash
 # Activate the virtual environment
 source env/bin/activate
+```
 2. Clone the Repository
 Clone the Arxiv Research Assistant repository to your local machine.
 
