@@ -56,11 +56,11 @@ from secret_keys import openai
 
 ###  *5. Run The App* 
 While in the project directory launch the streamlit app by running:
-**Note: To make another research request you will need to close the app with ^C then run the streamlit app again as request speed is optimized by saving the session state**
-
 ```bash
 streamlit run app.py
 ```
+
+**Note: To make another research request you will need to close the app with ^C then run the streamlit app again as request speed is optimized by saving the session state**
 
 ## Usage
 To maximize the effectiveness of the Arxiv Research Assistant, users are encouraged to follow the instructions provided in this README. By adhering to the setup guidelines and installing the necessary dependencies, users can seamlessly harness the power of the assistant to streamline their research endeavors.
