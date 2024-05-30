@@ -65,19 +65,23 @@ streamlit run app.py
 ## Usage
 To maximize the effectiveness of the Arxiv Research Assistant, users are encouraged to follow the instructions provided in this README. By adhering to the setup guidelines and installing the necessary dependencies, users can seamlessly harness the power of the assistant to streamline their research endeavors.
 
+- ### Using the Streamlit Web App
+  For users who prefer to use the web app rather than running locally, there is an additional parameter before getting access to the assistant. You must first enter your Open AI API key. For safety, I recommend revoking the key after using the assistant. Please note the research request takes between 3-5 minutes to run initially on the web app but once research is complete the assistant can return answers to any questions within a second.
+  ![Screenshot 1](/app_screenshots/api_key_input.png)
+
 - ###  **Making a Request**
   To initiate a request, simply input the topic of your current project or the subject you're actively researching, then click "Launch Request". This action triggers the Arxiv Research Assistant to begin its search process.
-  ![Screenshot 1](/app_screenshots/make_request.png)
+  ![Screenshot 2](/app_screenshots/research_task.png)
 
 - ### **Explore Relevant Papers**
   Once the Assistant completes downloading relevant papers, building the reference database, and generating summaries, three tabs are generated. The first tab, "Explore Relevant Papers", provides hyperlinks to each paper. Clicking on a hyperlink redirects the user to the corresponding PDF for thorough review. Additionally, each paper is accompanied by a summary expander for quick insights.
-  ![Screenshot 2](/app_screenshots/relevant_papers.png)
+  
 
 - ### **Assistant's Recommendation**
   After scanning all documents, the AI Research Assistant formulates a recommendation based on the user's request and the paper contents. This recommendation suggests the paper best suited to address the user's specific use case, facilitating further research efforts.
-  ![Screenshot 3](/app_screenshots/recommendation.png)
+  
 
 - ### **Chatting with Research Paper**
   In the "Chatting with Research Paper" tab, users select the relevant paper from the dropdown menu. They can then pose questions in the text box. Upon clicking "Request", the research assistant employs advanced RAG techniques to provide the best possible answers. Users can continue asking questions or switch to another paper using the dropdown menu.
-  ![Screenshot 4](/app_screenshots/chat_with_paper.png)
+  
   
