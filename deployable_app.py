@@ -37,6 +37,7 @@ if __name__ == '__main__':
 
     # Streamlit app
     st.markdown('# 📚 Arxiv Research Assistant 🤖')
+    st.markdown('### For detailed instructions on using the assistant please reference the [README on my Github](https://github.com/Daryldactyl/Arxiv_Research_Assistant/blob/main/README.md)')
     # st.write(st.session_state['llm'])
 
     if 'openai' not in st.session_state:
