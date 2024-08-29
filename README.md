@@ -12,13 +12,57 @@ Each PDF is meticulously summarized, providing users with succinct insights into
 
 For further engagement with the papers, the assistant offers a "Chat with Paper" feature. This functionality enables users to interact directly with the saved PDFs stored in a database. Users can seek clarification, pose inquiries, or extract specific information from the papers, enhancing their understanding and research capabilities.
 
-## **Web App or Local**
+## **Web App, Docker Container, or Build Local without Container**
 
 To just get started using the assistant you can open the [streamlit webapp](https://arxivresearchassistant.streamlit.app/).
 - **Note:** Running the research request in the web app takes about 3-5 minutes but once the research is complete you can speak to the assistant and receive a response within a second.
 
 If you would rather run the assistant locally please follow the setup instructions!
 
+## **Docker Container**
+
+To spin up the research assistant in a docker container follow these steps:
+### *1. Create a Virtual Environment (Optional but Recommended)*
+It's a good practice to work within a virtual environment to manage project dependencies.
+
+```bash
+# Create a virtual environment
+python3 -m venv env
+```
+```bash
+# Activate the virtual environment
+source env/bin/activate
+```
+
+### *2. Clone the Repository*
+Clone the Arxiv Research Assistant repository to your local machine.
+
+```bash
+git clone https://github.com/Daryldactyl/Arxiv_Research_Assistant.git
+```
+
+### *3. Build the Container*
+Navigate to the project directory and build the container.
+
+```bash
+cd Arxiv_Research_Assistant
+```
+```bash
+docker build -t arxiv-research-assistant .
+```
+
+### *4. Run the Container and get to Researching!*
+Run the container on your desired port then navigate to the local host instance.
+
+```bash
+docker run -d -p 8501:8501 arxiv-research-assistant
+```
+In your chosen internet browser navigate to:
+http://localhost:8501/
+
+HAVE FUN! Navigate to the Usage Section for help
+
+## **Build Local without Container**
 ## **Setup**
 ### *1. Create a Virtual Environment (Optional but Recommended)*
 It's a good practice to work within a virtual environment to manage project dependencies.
